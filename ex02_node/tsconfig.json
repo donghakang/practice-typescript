@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "es6" /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */,
+    "module": "commonjs" /* Specify what module code is generated. */,
+    "lib": ["Dom", "es6", "DOM.Iterable", "ScriptHost"],
+    "esModuleInterop": true /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables `allowSyntheticDefaultImports` for type compatibility. */,
+    "forceConsistentCasingInFileNames": true /* Ensure that casing is correct in imports. */,
+
+    // "sourceMap": false,      /* Generate .map files, we can place breakpoints in html source tab. */
+    "outDir": "./dist",
+    "rootDir": "./src",
+
+    "removeComments": true,
+    // "noEmit": true   
+    // "noEmitOnError": true    /* Create/Not create file when error occurred */ 
+    "sourceMap": true,
+
+    /* Type Checking */
+    "strict": true /* Enable all strict type-checking options. */,
+
+
+    /* Code quality */
+    "noUnusedLocals": true,     // unused variable error
+    "noUnusedParameters": true, 
+    "noImplicitReturns": true,  // least need to make function to return something when the function is not void
+  
+    "skipLibCheck": true /* Skip type checking all .d.ts files. */
+  },
+  "exclude": [
+    "node_modules", // would be the default
+    "analytics.dev.ts",
+    "*.dev.ts"
+  ],
+  "include": ["src/app.ts", "src/analytics.ts"]
+  // "files":[]                       // only files, no folders. Used in smaller projects
+}
