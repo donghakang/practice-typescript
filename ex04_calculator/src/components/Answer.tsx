@@ -1,15 +1,13 @@
 import React from "react";
-import {IState as Props } from '../App'
 
-export interface IProps {
-    numbers: Props['numbers'];
-    current: string;
+interface IProps {
+  answer: string;
 }
 
-const Answer: React.FC<IProps> = ({ numbers, current }) => {
+const Answer: React.FC<IProps> = ({ answer }) => {
   return (
     <div className="answer">
-      <h1>{current}</h1>
+      <h1>{answer}</h1>
     </div>
   );
 };
